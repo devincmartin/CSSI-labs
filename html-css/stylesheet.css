@@ -1,0 +1,27 @@
+p {
+  color: purple;
+}
+
+p .first-class {
+  color: green;
+}
+
+p.second-class {
+  color: yellow;
+
+p {
+  color: black;
+}
+
+
+div{
+  width: 60px;
+  /* Diplays properly is the default for div we add it here just for clarity */
+  display: block
+  margin: auto;
+}
+
+<head>
+<link rel="stylesheet"href="/path/to/stylesheet.css">
+</head>
+<div>Test</div>
