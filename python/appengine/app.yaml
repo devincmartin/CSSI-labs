@@ -1,0 +1,24 @@
+#app.yaml
+
+runtime: python27
+api_version: 1
+threadsafe: true
+# / = the character /
+# . - any character
+# * = repeated between 0 and infinity times
+# Anything after the / in url sends it to any of the pages in APP
+
+
+handlers:
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
+- url: /.* #regex
+  script: main.app
+
+libraries:
+- name: jinja2
+  version: latest

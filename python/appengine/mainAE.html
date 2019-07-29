@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  body{
+    background-color: #00ffff
+  }
+  </style>
+    <meta charset="utf-8">
+    <title>Welcome to Meme Gen</title>
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+  <center>
+    <h1>Meme Generator</h1>
+    <img height="200px" width="250px"
+      src="https://gramigo.com/img/whoa_area5113515410022.jpg?aHR0cHM6Ly9zY29udGVudC1mcnQzLTEuY2RuaW5zdGFncmFtLmNvbS92cC9kNTRmZjkzYjI0MzhkZmMxNzQ3ODI4NDM4MzU1OTg3NS81REIwNUU5NS90NTEuMjg4NS0xNS9lMzUvNjYwNTAyOTlfMTU2ODIwMTU1NDQ3OTIwXzYyNzc1NjQ1MDU2MjU0NDUwNjBfbi5qcGc/X25jX2h0PXNjb250ZW50LWZydDMtMS5jZG5pbnN0YWdyYW0uY29tJl9uY19jYXQ9MTA4JnNlPTgmaWdfY2FjaGVfa2V5PU1qQTRPVGMyTXpNd09UZzBOakl3TlRjM01nJTNEJTNELjI=">
+    <img height="200px" width="250px"
+      src="https://media.thetab.com/blogs.dir/90/files/2019/07/furniture-sitting-cushion-glasses-apparel-clothing-person-human-accessories-accessory-sunglasses.jpeg">
+    <img height="200px" width="250px"
+      src="https://www.denverpost.com/wp-content/uploads/2019/07/66935391_1344192369078904_3365361112710119424_n.jpg?w=620">
+
+    <h2>Welcome to the best Meme Generator out there!</h2>
+    <form method="post" action="/result">
+      {% for url in imgs%}
+        <img src="{{url}}" height="100px" width="150px">
+        <input type="radio" name="template" value="{{url}}"/>
+      {% endfor %}
+      <br>
+      <input type="text" name="top-line" placeholder="TOP LINE HERE">
+      <input type="text" name="bottom-line" placeholder="BOTTOME LINE HERE">
+      <!-- <input type="submit" name="Go Again!"/> -->
+      <input type="submit"value="Go!"/>
+    </form>
+
+<!-- /> = </_> -->
+
+
+    <a href="about">Link to about page</a>
+  <center/>
+  </body>
+</html>
